@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+@font-face {
+  font-family: "AdobeArabic";
+  src: url("src/assets/fonts/MyriadPro-Regular.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  padding: 0px;
+  margin: 0px;
+}
+
+*:not(i, img) {
+  /* font-family: "Cairo", sans-serif !important; */
+  font-family: "Tajawal", sans-serif !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/*
+*:not(i, img, ::before, ::after) {
+  font-family: "AdobeArabic" !important;
+} */
+
+body {
+  direction: inherit;
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #17174c;
+  --second-color: #3b2772;
+  --text-color: #dd954e;
+  --text-color2: #cacad9;
+  --dark-color: #000044;
+  --light-color: #ffffff;
+  --text-shadow-color: #77778d;
+  --overlay-color: #554f6a;
+}

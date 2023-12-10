@@ -1,0 +1,8 @@
+<ng-container>
+  <app-header></app-header>
+  <div id="content" class="pages-content">
+    <router-outlet #outlet="outlet" (activate)="onActivate($event)"></router-outlet>
+  </div>
+
+  <app-footer></app-footer>
+</ng-container>

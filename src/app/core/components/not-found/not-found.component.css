@@ -1,0 +1,22 @@
+img {
+  display: block;
+  margin: auto;
+  height: 80vh;
+}
+
+h1 {
+  color: var(--text-color2);
+}
+
+a {
+  color: #fff;
+  background-color: var(--text-color2);
+  border: 1px solid transparent;
+  transition: 0.4s;
+}
+
+a:hover {
+  color: var(--text-color2);
+  background-color: #fff;
+  border: 1px solid var(--text-color2);
+}

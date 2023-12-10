@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-sm navbar-light">
+  <div class="container">
+    <a class="navbar-brand" routerLink="">
+      <img src="/assets/imgs/logo.png" alt="logo" class="img-fluid logo" />
+    </a>
+
+    <div class=" navbar-menu">
+      <div class="navbar-nav  align-items-center">
+        <a class="nav-link" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          {{ "About us" | translate }} </a>
+        <a class="nav-link" [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          {{ "Vision" | translate }} </a>
+        <a class="nav-link" [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          {{ "Mission" | translate }} </a>
+        <a class="nav-link" [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          {{ "Why Elite?" | translate }} </a>
+        <a class="nav-link" [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          {{ "Our Services" | translate }} </a>
+
+        <a class="nav-link" [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          {{ "Our Projects" | translate }} </a>
+
+        <a class="nav-link" [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          {{ "Contact us" | translate }} </a>
+      </div>
+    </div>
+
+    <button class="btn langBtn d-none d-md-flex" (click)="switchLang()">
+      <span class="{{lang == 'en'?'activeLang':''}}">EN</span>
+      <span style="margin-inline: 10px;" class="line"></span>
+      <span class="{{lang == 'ar'?'activeLang':''}}">AR</span>
+    </button>
+  </div>
+
+  <button class="btn langBtn d-flex  d-md-none new" (click)="switchLang()">
+    <span class="{{lang == 'en'?'activeLang':''}}">EN</span>
+    <span style="margin-inline: 10px;" class="line"></span>
+    <span class="{{lang == 'ar'?'activeLang':''}}">AR</span>
+  </button>
+</nav>

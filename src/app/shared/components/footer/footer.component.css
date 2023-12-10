@@ -1,0 +1,69 @@
+.footer {
+  background-color: var(--main-color);
+  color: var(--light-color);
+  padding-top: 100px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.txt p {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.txt p:not(:first-of-type) {
+  margin: 0 auto 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  max-width: 300px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.txt p i {
+  width: 40px;
+  font-size: 20px;
+  margin-inline-end: 20px;
+}
+
+.txt p span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: start;
+}
+
+.copyright {
+  text-align: center;
+  color: var(--text-color2);
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 0;
+  letter-spacing: 0.25px;
+}
+
+.arrow-top {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 200;
+  height: 44px;
+  padding: 0px 14px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: var(--light-color);
+  margin: 50px auto 20px;
+  color: var(--main-color);
+}
+.arrow-top i {
+  color: var(--main-color);
+}
+
+.footer.footerAR .txt p i.fa.fa-phone {
+  transform: rotate(270deg);
+}
+.footer.footerEN .txt p i.fa.fa-phone {
+  transform: rotate(0deg);
+}
