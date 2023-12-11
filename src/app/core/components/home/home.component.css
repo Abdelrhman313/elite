@@ -81,17 +81,463 @@
 
 /***************************************************************/
 .about {
+  position: relative;
   display: block;
   height: 100%;
+  padding-bottom: 350px;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  background-image: url(/assets/imgs/v-line.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 75px;
+  inset-inline-end: 0;
+  height: 60px;
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-image: url(/assets/imgs/lines.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  bottom: 0;
+  left: 0;
+  height: 380px;
 }
 
 .about h2 {
+  width: 75%;
+  padding-top: 15px;
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
   font-size: 70px;
   font-weight: 600;
   letter-spacing: 0.25px;
+  margin-inline-end: 0;
+  margin-inline-start: auto;
 }
+
+.about h2::before {
+  content: "";
+  position: absolute;
+  top: 130%;
+  inset-inline-start: 0px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--text-color);
+}
+
+.about h2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  inset-inline-start: 0px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--text-color);
+}
+
 .about h2 span {
   color: var(--text-color);
+}
+
+.about h3 {
+  color: var(--text-color);
+  margin-bottom: 40px;
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+}
+
+.about p {
+  width: 33%;
+  font-size: 19px;
+  line-height: 1.4em;
+  letter-spacing: 0.25px;
+  color: var(--text-color2);
+  margin-bottom: 40px;
+}
+
+/***************************************************************/
+.main-info {
+  padding: 100px 0px 60px;
+  background-image: url("/assets/imgs/about-us.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.main-info::after,
+.structure::after,
+.vision::after,
+.mission::after,
+.why::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #17174c99;
+  z-index: 1;
+}
+
+.main-info .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.main-info .text h2 {
+  font-size: 26px;
+  text-align: center;
+  color: #fff;
+  line-height: 1.3em;
+  letter-spacing: 0.5px;
+}
+
+.main-info .boxs .box {
+  background: #fff;
+  width: 220px;
+  height: 100%;
+  position: relative;
+  padding: 10px;
+  border-radius: 2px;
+  z-index: 2;
+  margin: auto;
+}
+
+.main-info .boxs .box::after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  inset-inline-end: -14px;
+  border: 1px solid #fff;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.main-info .boxs .box img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 10px auto;
+  object-fit: contain;
+}
+.main-info .boxs .box h3 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  color: #444449;
+  line-height: 1.2em;
+  margin-bottom: 0;
+  height: 45%;
+  display: flex;
+  align-items: center;
+}
+
+.main-info .msg .msg-img {
+  background: #fff;
+  text-align: center;
+  border-radius: 2px;
+  margin-inline-end: 24px;
+  padding: 10px;
+}
+
+.main-info .msg .msg-img img {
+  width: 40px;
+}
+
+.main-info .msg .msg-img h3 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.main-info .msg p {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+}
+
+/***************************************************************/
+
+.clients {
+  padding: 0px 0px 70px;
+  background-color: var(--main-color);
+  color: var(--light-color);
+}
+
+.clients .info {
+  margin-bottom: 100px;
+}
+.clients .info .icon {
+  background-color: #faf2e8;
+  max-width: 290px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto 50px;
+}
+.clients .info .icon::before {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 20px;
+  border-style: solid;
+  border-color: #faf2e8 transparent transparent transparent;
+}
+
+.clients .info .icon::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: #e1d9d6 transparent transparent transparent;
+}
+
+.clients .info .icon img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.clients .info h3 {
+  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.clients .context span {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--text-color);
+  display: block;
+  margin: 0 auto 15px;
+}
+.clients .context h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.clients .context p {
+  font-size: 20px;
+  line-height: 1.5em;
+  letter-spacing: 0.2px;
+  width: 50%;
+  margin: 0 auto;
+}
+/***************************************************************/
+
+.structure {
+  position: relative;
+  padding: 100px 0px 20px;
+  background-image: url("/assets/imgs/stracture.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.structure .transparenHead {
+  color: #838599;
+  transform: translate(-70%, -25%);
+  letter-spacing: normal;
+}
+
+.structure h2 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.1em;
+  color: var(--text-color);
+  margin-bottom: 0;
+}
+.structure img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.structure p {
+  margin-bottom: 0;
+  max-width: 400px;
+  background: #fff;
+  margin-inline-end: 0;
+  margin-inline-start: auto;
+  font-size: 20px;
+  padding: 20px 30px;
+  text-align: center;
+  line-height: 1.2em;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+/***************************************************************/
+
+.vision,
+.mission,
+.why {
+  position: relative;
+  padding: 75px 0px;
+  background-image: url("/assets/imgs/vision2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.vision img,
+.mission img {
+  min-height: 650px;
+  object-fit: cover;
+}
+
+.vision h2,
+.mission h2 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.1em;
+  color: var(--text-color);
+  margin-top: 75px;
+  margin-bottom: 16px;
+}
+
+.vision p,
+.mission p {
+  margin-bottom: 0;
+  max-width: 600px;
+  color: var(--text-color2);
+  font-size: 20px;
+  line-height: 1.4em;
+  letter-spacing: 0.25px;
+  text-wrap: balance;
+}
+.vision .transparenHead,
+.mission .transparenHead {
+  color: #ffffff;
+  transform: translate(-42%, -28%);
+  font-weight: 500;
+  font-size: 150px;
+  z-index: 3;
+  opacity: 0.4;
+}
+
+/***************************************************************/
+
+.mission {
+  background-image: url("/assets/imgs/mission2.jpg");
+}
+
+/***************************************************************/
+
+.why {
+  background-image: url("/assets/imgs/why-elite.jpg");
+  color: var(--light-color);
+}
+.why::after {
+  background: linear-gradient(#17174c, #17174c99);
+}
+
+.why h2 {
+  font-size: 100px;
+  line-height: 1.1em;
+  color: var(--text-color);
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+.why h2 span.diff {
+  display: inline-block;
+  max-width: 450px;
+  margin-inline-start: 16px;
+  font-size: 20px;
+  color: var(--light-color);
+  font-weight: 400;
+  line-height: normal;
+}
+
+.why p {
+  font-size: 20px;
+  color: var(--text-color2);
+  letter-spacing: 0.25px;
+  line-height: 1.5em;
+  max-width: 460px;
+}
+/***************************************************************/
+.projects {
+  position: relative;
+  padding: 100px 0px;
+  background-color: var(--main-color);
+  color: var(--light-color);
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 70px;
+  margin-bottom: 100px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+
+.projects h3 {
+  font-size: 44px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+}
+
+.projects .project-img {
+  height: 450px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.projects .project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.75s all ease-in-out;
+  cursor: pointer;
+}
+.projects .project-img.projects2,
+.projects .project-img.projects3 {
+  height: 650px;
+}
+
+.projects .project-img img:hover {
+  transform: scale(1.1);
+}
+/***************************************************************/
+.transparenHead {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  font-size: 120px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  opacity: 1;
+  font-weight: 600;
+  line-height: 1em;
+  color: #1d1d61;
+  text-align: center;
 }

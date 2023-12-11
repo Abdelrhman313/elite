@@ -27,16 +27,21 @@
   <!-- end header -->
 
   <!-- start about -->
-  <div class="about">
-    <span>{{'About us'|translate}}</span>
-    <div class="container">
-      <h2 class=" text-center">
-        <span>{{"headerS" | translate}}</span>
-        {{"headerH"|translate}}
-      </h2>
+  <div class="about" id="About">
+    <span class="transparenHead">
+      {{'About'|translate}}
+      <br>
+      {{'us'|translate}}
+    </span>
+    <h2 class=" text-center position-relative" style="z-index: 2;">
+      <span>{{"headerS" | translate}}</span>
+      {{"headerH"|translate}}
+    </h2>
+    <div class="container position-relative" style="z-index: 2;">
+
 
       <div class="content">
-        <h2>{{'About us' | translate}}</h2>
+        <h3>{{'About us' | translate}}</h3>
         <p>{{'aboutP1' | translate}}</p>
         <p class="mb-0">{{'aboutP2' | translate}}</p>
       </div>
@@ -44,4 +49,234 @@
   </div>
   <!-- end about -->
 
+  <!-- start main-info -->
+  <div class="main-info">
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="text">
+            <h2>{{"mainInfoH2" | translate}}</h2>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-8">
+          <div class="boxs">
+            <div class="row align-items-stretch">
+              <div class="col-lg-4 col-md-6 mb-5">
+                <div class="box">
+                  <img src="/assets/imgs/file.png" alt="file" class="img-fluid" />
+                  <h3>{{"mainInfoH31" | translate}}</h3>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-5">
+                <div class="box">
+                  <img src="/assets/imgs/recicle.png" alt="recicle" class="img-fluid" />
+                  <h3>{{"mainInfoH32" | translate}}</h3>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-5">
+                <div class="box">
+                  <img src="/assets/imgs/gears.png" alt="gears" class="img-fluid" />
+                  <h3>{{"mainInfoH33" | translate}}</h3>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-5">
+                <div class="box">
+                  <img src="/assets/imgs/ksa.png" alt="ksa" class="img-fluid" />
+                  <h3>{{"mainInfoH34" | translate}}</h3>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-5">
+                <div class="box">
+                  <img src="/assets/imgs/increase.png" alt="increase" class="img-fluid" />
+                  <h3>{{"mainInfoH35" | translate}}</h3>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-5">
+                <div class="box">
+                  <img src="/assets/imgs/network.png" alt="network" class="img-fluid" />
+                  <h3>{{"mainInfoH36" | translate}}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="msg d-flex align-items-center">
+          <div class="msg-img">
+            <img src="/assets/imgs/flag.png" alt="flag">
+            <h3>{{"msgH3" | translate}}</h3>
+          </div>
+          <div class="msg-info">
+            <p>{{"msgP1" | translate}}</p>
+            <p>{{"msgP2" | translate}}</p>
+            <p class="mb-0">{{"msgP3" | translate}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End main-info -->
+
+  <!-- start clients -->
+  <div class="clients text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="info">
+            <div class="icon">
+              <img src="/assets/imgs/users.png" alt="users" class="img-fluid">
+            </div>
+            <h3>{{"Commitment" | translate}}</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info">
+            <div class="icon">
+              <img src="/assets/imgs/give.png" alt="give" class="img-fluid">
+            </div>
+            <h3>{{"responsibility" | translate}}</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info">
+            <div class="icon">
+              <img src="/assets/imgs/qady.png" alt="qady" class="img-fluid">
+            </div>
+            <h3>{{"effective" | translate}}</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="context">
+          <span>{{"clientsS" | translate}}...</span>
+          <h2>{{"clientsH" | translate}}</h2>
+          <p>{{"clientsP" | translate}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end clients -->
+
+  <!-- start structure -->
+  <div class="structure">
+    <div class="container position-relative" style="z-index: 2;">
+      <span class="transparenHead">{{"skelaton" | translate}} {{"system" | translate}}</span>
+      <h2>
+        <span> {{"skelaton" | translate}}</span>
+        <br>
+        {{"system" | translate}}
+      </h2>
+      <img src="/assets/imgs/{{lang=='en'?'tree-en.png':'tree-ar.png'}}" alt="stracture" class="img-fluid">
+
+      <p>{{"stractureP" | translate}}</p>
+    </div>
+  </div>
+  <!-- end structure -->
+
+  <!-- start vision -->
+  <div class="vision position-relative" id="Vision">
+    <span class="transparenHead">{{"visionH" | translate}}</span>
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="vision-img">
+            <img src="/assets/imgs/vision.png" alt="vision" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-6">
+          <div class="vision-info">
+            <h2>{{"visionH" | translate}}</h2>
+            <p>{{"visionP" | translate}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end vision -->
+
+  <!-- start mission -->
+  <div class="mission position-relative" id="Mission">
+    <span class="transparenHead">{{"missionH" | translate}}</span>
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="mission-img">
+            <img src="/assets/imgs/mission.jpg" alt="mission" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-6">
+          <div class="mission-info">
+            <h2>{{"missionH" | translate}}</h2>
+            <p>{{"missionP" | translate}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end mission -->
+
+  <!-- start why -->
+  <div class="why position-relative" id="Why">
+    <div class="container position-relative" style="z-index: 3;">
+      <h2>
+        <span>{{"whyH1" | translate}}</span>
+        <br>
+        <span>{{"whyH2" | translate}}</span>
+        <span class="diff">{{ " " }} {{ "whyH3" | translate}}</span>
+        <br>
+        <span>{{"whyH4" | translate}}</span>
+      </h2>
+
+      <p>{{"whyP1" | translate}}</p>
+      <p>{{"whyP2" | translate}}</p>
+      <p>{{"whyP3" | translate}}</p>
+      <p>{{"whyP4" | translate}}</p>
+      <p>{{"whyP5" | translate}}</p>
+    </div>
+  </div>
+  <!-- end why -->
+
+  <!-- start Projects -->
+  <div class="projects position-relative" id="Projects">
+    <div class="container">
+      <h2>{{"projectsH1" | translate}}</h2>
+      <h3>{{"projectsH2" | translate}}</h3>
+      <div class="row mb-5">
+        <ng-container *ngFor="let item of projects;let i = index">
+          <div class="{{i != 3 ? 'col-lg-4 col-md-6': 'col-lg-8 col-md-12'}} mb-4">
+            <div class="project-img">
+              <img src="{{item}}" alt="project{{i}}" class="img-fluid">
+            </div>
+          </div>
+        </ng-container>
+
+      </div>
+
+      <h3>{{"projectsH3" | translate}}</h3>
+      <div class="row mb-5">
+        <ng-container *ngFor="let item of projects2;let i = index">
+          <div class=" col-lg-6 col-md-6 mb-4">
+            <div class="project-img projects2">
+              <img src="{{item}}" alt="project2{{i}}" class="img-fluid">
+            </div>
+          </div>
+        </ng-container>
+
+      </div>
+
+      <h3>{{"projectsH4" | translate}}</h3>
+      <div class="row">
+        <ng-container *ngFor="let item of projects3;let i = index">
+          <div class=" col-lg-6 col-md-6 mb-4">
+            <div class="project-img projects3">
+              <img src="{{item}}" alt="projects3{{i}}" class="img-fluid">
+            </div>
+          </div>
+        </ng-container>
+
+      </div>
+    </div>
+  </div>
+  <!-- end Projects -->
 </div>

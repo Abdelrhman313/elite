@@ -6,22 +6,13 @@
 
     <div class=" navbar-menu">
       <div class="navbar-nav  align-items-center">
-        <a class="nav-link" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-          {{ "About us" | translate }} </a>
-        <a class="nav-link" [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-          {{ "Vision" | translate }} </a>
-        <a class="nav-link" [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-          {{ "Mission" | translate }} </a>
-        <a class="nav-link" [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-          {{ "Why Elite?" | translate }} </a>
-        <a class="nav-link" [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-          {{ "Our Services" | translate }} </a>
-
-        <a class="nav-link" [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-          {{ "Our Projects" | translate }} </a>
-
-        <a class="nav-link" [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-          {{ "Contact us" | translate }} </a>
+        <a class="nav-link" href="#About"> {{ "About us" | translate }} </a>
+        <a class="nav-link" href="#Vision"> {{ "Vision" | translate }} </a>
+        <a class="nav-link" href="#Mission"> {{ "Mission" | translate }} </a>
+        <a class="nav-link" href="#Why"> {{ "Why Elite?" | translate }} </a>
+        <a class="nav-link" href="#Projects"> {{ "Our Services" | translate }} </a>
+        <a class="nav-link" href="#Projects"> {{ "Our Projects" | translate }} </a>
+        <a class="nav-link" href="#Contact"> {{ "Contact us" | translate }} </a>
       </div>
     </div>
 
