@@ -182,4 +182,9 @@
   .navbar .langBtn.new {
     width: 100%;
   }
+
+  .navbar .nav-link {
+    padding: 5px 3px;
+    font-size: 13px;
+  }
 }

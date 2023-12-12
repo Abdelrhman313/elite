@@ -94,6 +94,31 @@
   }
 }
 
+@media (max-width: 575px) {
+  .header .header-info h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    letter-spacing: 0;
+    line-height: 1.1em;
+  }
+  .header .header-info p {
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 1.4em;
+  }
+  .header .header-info a {
+    color: var(--light-color);
+    background-color: var(--main-color);
+    box-shadow: 0px 0px 1px 2px var(--second-color);
+    border-radius: 3px;
+    min-width: 120px;
+    padding: 8px 16px;
+    transition: 0.3s all ease-in-out;
+    text-decoration: none;
+  }
+}
+
 /***************************************************************/
 .about {
   position: relative;
@@ -302,13 +327,18 @@
   .about h2 {
     line-height: 1.2em;
     margin-bottom: 100px;
+    font-size: 23px;
+    letter-spacing: 0;
+  }
+  .about::before {
+    height: 40px;
   }
   .about h2::before {
-    top: 75%;
+    top: 170%;
   }
 
   .about h2::after {
-    top: 95%;
+    top: 120%;
   }
 }
 
@@ -419,6 +449,134 @@
   letter-spacing: 0.25px;
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .main-info .text h2 {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    line-height: 1.3em;
+    letter-spacing: 0.25px;
+    text-wrap: balance;
+  }
+
+  .main-info .boxs .box {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 1px 5px;
+    border-radius: 2px;
+    z-index: 2;
+    margin: auto;
+  }
+
+  .main-info .boxs .box::after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    inset-inline-end: -10px;
+    border: 1px solid #fff;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-info .boxs .box img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 10px auto;
+    object-fit: fill;
+  }
+  .main-info .boxs .box h3 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #444449;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    text-wrap: wrap;
+    height: auto;
+  }
+
+  .main-info .msg p {
+    font-size: 16px;
+    margin: 0px 0px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-info .text h2 {
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    line-height: 1.3em;
+    letter-spacing: 0.25px;
+    text-wrap: balance;
+  }
+
+  .main-info .boxs .box {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 1px 0px;
+    border-radius: 2px;
+    z-index: 2;
+    margin: auto;
+  }
+
+  .main-info .boxs .box::after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    inset-inline-end: -5px;
+    border: 1px solid #fff;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-info .boxs .box img {
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin: 10px auto;
+    object-fit: fill;
+  }
+  .main-info .boxs .box h3 {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #444449;
+    line-height: 1.2em;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    text-wrap: wrap;
+  }
+
+  .main-info .msg .msg-img {
+    margin-inline-end: 10px;
+    padding: 5px;
+  }
+
+  .main-info .msg .msg-img img {
+    width: 20px;
+  }
+
+  .main-info .msg .msg-img h3 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  .main-info .msg p {
+    font-size: 11px;
+    margin: 0;
+  }
+}
 /***************************************************************/
 
 .clients {
@@ -504,6 +662,74 @@
     width: 90%;
   }
 }
+
+@media (max-width: 575px) {
+  .clients .info {
+    margin-bottom: 50px;
+  }
+
+  .clients .info .icon {
+    background-color: #faf2e8;
+    max-width: 290px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto 25px;
+  }
+
+  .clients .info .icon::before {
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 12px;
+    border-style: solid;
+    border-color: #faf2e8 transparent transparent transparent;
+  }
+
+  .clients .info .icon::after {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #afafaf transparent transparent transparent;
+  }
+
+  .clients .info .icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  .clients .info h3 {
+    font-size: 15px;
+  }
+
+  .clients .context span {
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--text-color);
+    display: block;
+    margin: 0 auto 15px;
+  }
+  .clients .context h2 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .clients .context p {
+    width: 95%;
+    font-size: 14px;
+    line-height: 1.8em;
+  }
+}
+
 /***************************************************************/
 
 .structure {
@@ -649,6 +875,14 @@
   .vision img,
   .mission img {
     height: 580px;
+  }
+}
+
+@media (max-width: 575px) {
+  .vision .transparenHead,
+  .mission .transparenHead {
+    transform: translate(-50%, -10%);
+    font-size: 100px;
   }
 }
 /***************************************************************/

@@ -5,12 +5,15 @@
   padding-bottom: 40px;
   text-align: center;
 }
-.txt p {
+.txt p,
+.txt a {
   font-size: 40px;
   margin-bottom: 30px;
+  text-decoration: none;
+  color: var(--light-color);
 }
 
-.txt p:not(:first-of-type) {
+.txt a {
   margin: 0 auto 5px;
   display: flex;
   justify-content: start;
@@ -20,13 +23,13 @@
   line-height: 30px;
 }
 
-.txt p i {
+.txt a i {
   width: 40px;
   font-size: 20px;
   margin-inline-end: 20px;
 }
 
-.txt p span {
+.txt a span {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -61,10 +64,10 @@
   color: var(--main-color);
 }
 
-.footer.footerAR .txt p i.fa.fa-phone {
+.footer.footerAR .txt a i.fa.fa-phone {
   transform: rotate(270deg);
 }
-.footer.footerEN .txt p i.fa.fa-phone {
+.footer.footerEN .txt a i.fa.fa-phone {
   transform: rotate(0deg);
 }
 
@@ -99,14 +102,15 @@
 }
 
 @media (max-width: 575px) {
-  .txt p {
+  .txt p,
+  .txt a {
     font-size: 27px;
     line-height: 1.1em;
   }
 }
 
 @media (min-width: 575px) {
-  .txt p:not(:first-of-type) {
+  .txt a {
     max-width: 380px;
   }
 }
