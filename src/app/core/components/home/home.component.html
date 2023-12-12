@@ -3,22 +3,22 @@
   <div class="header position-relative">
     <div class="container">
       <div class="row position-relative" style="z-index: 2;">
-        <div class="col-lg-6 col-md-7 m-0 p-0">
-          <div class="header-info" data-aos="zoom-in" data-aos-duration="1200">
-            <h1 data-aos="fade-down-left" data-aos-duration="1200" data-aos-delay="1.2s">
+        <div class="col-xl-6 col-lg-7   p-md-0 mb-4 mb-lg-0">
+          <div class="header-info" data-aos="zoom-in">
+            <h1 data-aos="fade-down-left" data-aos-delay="2s">
               <span>{{"headerS" | translate}}</span>
               {{"headerH"|translate}}
             </h1>
-            <p data-aos="fade-down" data-aos-duration="1200" data-aos-delay="1.2s">{{"headerP"|translate}}</p>
+            <p data-aos="fade-down" data-aos-delay="2s">{{"headerP"|translate}}</p>
             <div class="btns">
-              <button class="btn">{{"headerBtn1"|translate}}</button>
-              <button class="btn">{{"headerBtn2"|translate}}</button>
+              <a class="btn" href="mailto:info@elite-dia.com" target="_blank">{{"headerBtn1"|translate}}</a>
+              <a class="btn" href="#Contact">{{"headerBtn2"|translate}}</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-5 m-0 p-0">
-          <div class="header-img" data-aos="zoom-out" data-aos-duration="1200">
-            <img src="/assets/imgs/header1.png" alt="header" height="500px" />
+        <div class="col-xl-6 col-lg-5 m-md-0 p-md-0">
+          <div class="header-img" data-aos="zoom-out">
+            <img src="/assets/imgs/header1.png" alt="header" height="500px" width="100%" style="object-fit: cover;" />
           </div>
         </div>
       </div>
@@ -27,7 +27,7 @@
   <!-- end header -->
 
   <!-- start about -->
-  <div class="about" id="About">
+  <div class="about {{lang=='ar'?'AR':'EN'}}" id="About" data-aos="fade-up">
     <span class="transparenHead">
       {{'About'|translate}}
       <br>
@@ -53,7 +53,7 @@
   <div class="main-info">
     <div class="container position-relative" style="z-index: 2;">
       <div class="row">
-        <div class="col-lg-3 col-md-4">
+        <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
           <div class="text">
             <h2>{{"mainInfoH2" | translate}}</h2>
           </div>
@@ -61,37 +61,37 @@
         <div class="col-lg-9 col-md-8">
           <div class="boxs">
             <div class="row align-items-stretch">
-              <div class="col-lg-4 col-md-6 mb-5">
+              <div class="col-lg-4 col-md-6 mb-5 " data-aos="fade-right" data-aos-offset="300">
                 <div class="box">
                   <img src="/assets/imgs/file.png" alt="file" class="img-fluid" />
                   <h3>{{"mainInfoH31" | translate}}</h3>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 mb-5">
+              <div class="col-lg-4 col-md-6 mb-5 " data-aos="fade-up" data-aos-offset="300">
                 <div class="box">
                   <img src="/assets/imgs/recicle.png" alt="recicle" class="img-fluid" />
                   <h3>{{"mainInfoH32" | translate}}</h3>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 mb-5">
+              <div class="col-lg-4 col-md-6 mb-5 " data-aos="fade-left" data-aos-offset="300">
                 <div class="box">
                   <img src="/assets/imgs/gears.png" alt="gears" class="img-fluid" />
                   <h3>{{"mainInfoH33" | translate}}</h3>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 mb-5">
+              <div class="col-lg-4 col-md-6 mb-5 " data-aos="fade-right" data-aos-offset="300">
                 <div class="box">
                   <img src="/assets/imgs/ksa.png" alt="ksa" class="img-fluid" />
                   <h3>{{"mainInfoH34" | translate}}</h3>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 mb-5">
+              <div class="col-lg-4 col-md-6 mb-5 " data-aos="fade-down" data-aos-offset="300">
                 <div class="box">
                   <img src="/assets/imgs/increase.png" alt="increase" class="img-fluid" />
                   <h3>{{"mainInfoH35" | translate}}</h3>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 mb-5">
+              <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-left" data-aos-offset="300">
                 <div class="box">
                   <img src="/assets/imgs/network.png" alt="network" class="img-fluid" />
                   <h3>{{"mainInfoH36" | translate}}</h3>
@@ -121,7 +121,7 @@
   <!-- start clients -->
   <div class="clients text-center">
     <div class="container">
-      <div class="row">
+      <div class="row" data-aos="zoom-in" data-aos-offset="300">
         <div class="col-md-4">
           <div class="info">
             <div class="icon">
@@ -147,7 +147,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row" data-aos="zoom-out" data-aos-offset="300">
         <div class="context">
           <span>{{"clientsS" | translate}}...</span>
           <h2>{{"clientsH" | translate}}</h2>
@@ -159,7 +159,7 @@
   <!-- end clients -->
 
   <!-- start structure -->
-  <div class="structure">
+  <div class="structure" data-aos="flip-down" data-aos-offset="300">
     <div class="container position-relative" style="z-index: 2;">
       <span class="transparenHead">{{"skelaton" | translate}} {{"system" | translate}}</span>
       <h2>
@@ -175,7 +175,7 @@
   <!-- end structure -->
 
   <!-- start vision -->
-  <div class="vision position-relative" id="Vision">
+  <div class="vision position-relative" id="Vision" data-aos="fade-down-right" data-aos-offset="300">
     <span class="transparenHead">{{"visionH" | translate}}</span>
     <div class="container position-relative" style="z-index: 2;">
       <div class="row">
@@ -196,7 +196,7 @@
   <!-- end vision -->
 
   <!-- start mission -->
-  <div class="mission position-relative" id="Mission">
+  <div class="mission position-relative" id="Mission" data-aos="fade-down-left" data-aos-offset="300">
     <span class="transparenHead">{{"missionH" | translate}}</span>
     <div class="container position-relative" style="z-index: 2;">
       <div class="row">
@@ -217,7 +217,7 @@
   <!-- end mission -->
 
   <!-- start why -->
-  <div class="why position-relative" id="Why">
+  <div class="why position-relative" id="Why" data-aos="zoom-out-up" data-aos-offset="300">
     <div class="container position-relative" style="z-index: 3;">
       <h2>
         <span>{{"whyH1" | translate}}</span>

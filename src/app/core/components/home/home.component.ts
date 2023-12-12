@@ -3,6 +3,8 @@ import {
   OnInit,
 } from '@angular/core';
 import AOS from 'aos';
+import 'aos/dist/aos.css'
+
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -67,7 +69,20 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    AOS.init();
+  }
+
+  ngAfterViewInit(): void {
+    AOS.init({
+      disable: 'phone',
+      startEvent: 'DOMContentLoaded',
+      duration: 1500,
+
+    });
+
+    window.onresize = () => {
+      AOS.refresh();
+
+    }
   }
 
   goToTop() {

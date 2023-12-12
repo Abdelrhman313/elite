@@ -34,6 +34,11 @@ body {
   direction: inherit;
   overflow-x: hidden !important;
   scroll-behavior: smooth;
+  background-color: var(--main-color);
+}
+
+html {
+  overflow-x: hidden !important;
 }
 
 :root {
@@ -45,4 +50,17 @@ body {
   --light-color: #ffffff;
   --text-shadow-color: #77778d;
   --overlay-color: #554f6a;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f3f3f3;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--text-color);
 }

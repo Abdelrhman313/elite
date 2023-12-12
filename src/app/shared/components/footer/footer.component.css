@@ -15,7 +15,7 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  max-width: 300px;
+  max-width: 320px;
   height: 30px;
   line-height: 30px;
 }
@@ -89,11 +89,24 @@
   transition: 0.3s all ease-in-out;
 }
 
-.social a:hover{
+.social a:hover {
   transform: translateY(3px);
 }
 
 .social a i {
   font-size: 20px;
   color: var(--main-color);
+}
+
+@media (max-width: 575px) {
+  .txt p {
+    font-size: 27px;
+    line-height: 1.1em;
+  }
+}
+
+@media (min-width: 575px) {
+  .txt p:not(:first-of-type) {
+    max-width: 380px;
+  }
 }
