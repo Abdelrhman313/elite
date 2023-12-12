@@ -246,7 +246,10 @@
         <ng-container *ngFor="let item of projects;let i = index">
           <div class="{{i != 3 ? 'col-lg-4 col-md-6': 'col-lg-8 col-md-12'}} mb-4">
             <div class="project-img">
-              <img src="{{item}}" alt="project{{i}}" class="img-fluid">
+              <figure class="image-box-desc">
+                <img [src]="item?.modal?.img" (click)="openImageModalRowDescription(206, item)" alt="project{{i}}"
+                  class="img-fluid" />
+              </figure>
             </div>
           </div>
         </ng-container>
@@ -258,7 +261,10 @@
         <ng-container *ngFor="let item of projects2;let i = index">
           <div class=" col-lg-6 col-md-6 mb-4">
             <div class="project-img projects2">
-              <img src="{{item}}" alt="project2{{i}}" class="img-fluid">
+              <figure class="image-box-desc">
+                <img [src]="item?.modal?.img" (click)="openImageModalRowDescription2(206, item)" alt="project2{{i}}"
+                  class="img-fluid" />
+              </figure>
             </div>
           </div>
         </ng-container>
@@ -270,7 +276,10 @@
         <ng-container *ngFor="let item of projects3;let i = index">
           <div class=" col-lg-6 col-md-6 mb-4">
             <div class="project-img projects3">
-              <img src="{{item}}" alt="projects3{{i}}" class="img-fluid">
+              <figure class="image-box-desc">
+                <img [src]="item?.modal?.img" (click)="openImageModalRowDescription3(206, item)" alt="projects3{{i}}"
+                  class="img-fluid" />
+              </figure>
             </div>
           </div>
         </ng-container>

@@ -16,6 +16,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
 
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { GalleryModule } from '@ks89/angular-modal-gallery';
 
 @NgModule({
   declarations: [AppComponent],
@@ -40,6 +41,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
         deps: [HttpClient],
       },
     }),
+    GalleryModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent],
