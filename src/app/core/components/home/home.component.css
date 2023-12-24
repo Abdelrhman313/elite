@@ -1075,6 +1075,7 @@
 }
 
 
+
 .contact .container {
   position: relative;
   z-index: 2;
@@ -1174,6 +1175,11 @@
 
   .contact select {
     font-size: 18px;
+  }
+
+
+  .contact .col-3.col-sm-2 {
+    padding-inline-start: 0 !important;
   }
 }
 
