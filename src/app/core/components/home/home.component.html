@@ -114,6 +114,8 @@
           </div>
         </div>
       </div>
+
+      <p class="customP">{{"stractureP" | translate}}</p>
     </div>
   </div>
   <!-- End main-info -->
@@ -159,7 +161,7 @@
   <!-- end clients -->
 
   <!-- start structure -->
-  <div class="structure" data-aos="flip-down" data-aos-offset="300">
+  <!-- <div class="structure" data-aos="flip-down" data-aos-offset="300">
     <div class="container position-relative" style="z-index: 2;">
       <span class="transparenHead">{{"skelaton" | translate}} {{"system" | translate}}</span>
       <h2>
@@ -171,7 +173,7 @@
 
       <p>{{"stractureP" | translate}}</p>
     </div>
-  </div>
+  </div> -->
   <!-- end structure -->
 
   <!-- start vision -->
@@ -288,4 +290,54 @@
     </div>
   </div>
   <!-- end Projects -->
+
+  <!-- start contact -->
+  <div class="contact text-center text-light" id="Contact">
+    <div class="container">
+      <h2>{{'contactH' | translate}} <br>{{'contactH2' | translate}} </h2>
+      <hr>
+      <form #form="ngForm">
+        <div class="row align-items-center justify-content-center">
+          <p>{{'contactP' | translate}}</p>
+          <div class="col-md-6 mb-4">
+            <input type="text" name="name" placeholder="{{'Name' | translate}}" ngModel required class="form-control"
+              autocomplete="off" />
+          </div>
+          <div class="col-md-6 mb-4">
+            <input type="email" name="email" placeholder="{{'E-mail' | translate}}" ngModel email required
+              class="form-control" autocomplete="off" />
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="row">
+              <div class="col-10">
+                <input type="tel" name="phone" placeholder="{{'Mobile number' | translate}}" ngModel required
+                  class="form-control" autocomplete="off" />
+              </div>
+              <div class="col-2">
+                <select name="code" ngModel required [(ngModel)]="selectedCode" class="form-control" autocomplete="off">
+                  <option value="+966" selected>+966</option>
+                  <option value="+20">+20</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <p>{{'message' | translate}}</p>
+          <div class="col-12">
+            <textarea name="message" ngModel required class="form-control" placeholder="{{'message'|translate}}"
+              autocomplete="off"></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary" [disabled]="form.invalid"
+              (click)="formSubmit(form?.value); form.reset()">{{'send' | translate}}</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+  <!-- end contact -->
+
 </div>

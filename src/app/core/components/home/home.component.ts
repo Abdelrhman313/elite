@@ -7,6 +7,7 @@ import 'aos/dist/aos.css'
 
 import { TranslateService } from '@ngx-translate/core';
 import { ModalGalleryService, ModalGalleryRef, Image } from '@ks89/angular-modal-gallery';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -275,10 +276,12 @@ export class HomeComponent implements OnInit {
       id: 10,
     },
   ]
+  selectedCode: any = '+966'
 
   constructor(
     private translateService: TranslateService,
     private modalGalleryService: ModalGalleryService,
+    private http: HttpClient
   ) {
     this.lang = this.translateService.currentLang;
 
@@ -347,4 +350,8 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnDestroy() { }
+
+  formSubmit(data: any) {
+    console.log(data);
+  }
 }
