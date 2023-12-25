@@ -1100,7 +1100,7 @@
   line-height: 51px;
   color: #dd954e;
   font-weight: 800;
-  text-align: center;
+  text-align: start;
 }
 
 .contact p {
@@ -1179,7 +1179,9 @@
 }
 
 @media (max-width: 575px) {
-
+  .contact h2{
+    text-align: center;
+  }
   .contact input,
   .contact select {
     opacity: 0.800;
@@ -1193,6 +1195,12 @@
 
   .contact .col-3.col-sm-2 {
     padding-inline-start: 0 !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  hr{
+    width: 100% !important;
   }
 }
 
@@ -1316,6 +1324,112 @@
     text-wrap: balance;
   }
 
+}
+
+/***************************************************************/
+.txt p,
+.txt a {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: var(--light-color);
+}
+
+.txt p{
+  font-size: 40px;
+  margin-bottom: 46px;
+}
+
+.txt a {
+  margin: 0 auto 16px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  max-width: 320px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.txt a i {
+  width: 40px;
+  font-size: 20px;
+  margin-inline-end: 20px;
+}
+
+.txt a span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: start;
+  direction: initial;
+}
+
+.footer-info.footerAR .txt a span {
+  text-align: end;
+}
+
+.footer-info.footerAR .txt a i.fa.fa-phone {
+  transform: rotate(270deg);
+  margin-inline-start: 7px;
+}
+
+.footer-info .txt a i.fa.fa-phone::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.footer-info.footerEN .txt a i.fa.fa-phone {
+  transform: rotate(0deg);
+  margin-inline-start: -7px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+}
+
+.social a {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-color);
+  color: var(--main-color);
+  text-decoration: none;
+  transition: 0.3s all ease-in-out;
+}
+
+.social a:hover {
+  transform: translateY(3px);
+}
+
+.social a i {
+  font-size: 20px;
+  color: var(--main-color);
+}
+
+
+@media (max-width: 575px) {
+
+  .txt p,
+  .txt a {
+    font-size: 27px;
+    line-height: 1.1em;
+  }
+}
+
+@media (min-width: 575px) {
+  .txt a {
+    max-width: 340px;
+  }
 }
 
 /***************************************************************/

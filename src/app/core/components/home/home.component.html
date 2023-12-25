@@ -355,50 +355,96 @@
   <!-- end Projects -->
 
   <!-- start contact -->
-  <div class="contact text-center text-light" id="Contact">
+  <div class="contact text-start text-light" id="Contact">
     <div class="container">
-      <h2>{{'contactH' | translate}} <br>{{'contactH2' | translate}} </h2>
-      <hr>
-      <form #form="ngForm">
-        <div class="row align-items-center justify-content-center">
-          <p>{{'contactP' | translate}}</p>
-          <div class="col-md-6 mb-4">
-            <input type="text" name="name" placeholder="{{'Name' | translate}}" ngModel required class="form-control"
-              autocomplete="off" />
-          </div>
-          <div class="col-md-6 mb-4">
-            <input type="email" name="email" placeholder="{{'E-mail' | translate}}" ngModel email required
-              class="form-control" autocomplete="off" />
-          </div>
-          <div class="col-md-6 mb-4">
-            <div class="row">
-              <div class="col-9 col-sm-10">
-                <input type="tel" name="phone" placeholder="{{'Mobile number' | translate}}" ngModel required
+      <div class="row align-items-center justify-content-center">
+
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2>{{'contactH' | translate}} <br>{{'contactH2' | translate}} </h2>
+          <hr>
+          <form #form="ngForm">
+            <div class="row align-items-center justify-content-center">
+              <p>{{'contactP' | translate}}</p>
+              <div class="col-md-6 mb-4">
+                <input type="text" name="name" placeholder="{{'Name' | translate}}" ngModel required
                   class="form-control" autocomplete="off" />
               </div>
-              <div class="col-3 col-sm-2">
-                <select name="code" ngModel required [(ngModel)]="selectedCode" class="form-control" autocomplete="off">
-                  <option value="+966" selected>+966</option>
-                  <option value="+20">+20</option>
-                </select>
+              <div class="col-md-6 mb-4">
+                <input type="email" name="email" placeholder="{{'E-mail' | translate}}" ngModel email required
+                  class="form-control" autocomplete="off" />
               </div>
+              <div class="col-md-12 mb-4">
+                <div class="row">
+                  <div class="col-9 col-sm-9">
+                    <input type="tel" name="phone" placeholder="{{'Mobile number' | translate}}" ngModel required
+                      class="form-control" autocomplete="off" />
+                  </div>
+                  <div class="col-3 col-sm-3">
+                    <select name="code" ngModel required [(ngModel)]="selectedCode" class="form-control"
+                      autocomplete="off">
+                      <option [value]="null" disabled selected>----</option>
+                      <option *ngFor="let item of codes" value="{{item}}">{{item}}</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <p>{{'message' | translate}}</p>
+              <div class="col-12">
+                <textarea name="message" ngModel required class="form-control" placeholder="{{'message'|translate}}"
+                  autocomplete="off"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary" [disabled]="form.invalid"
+                  (click)="formSubmit(form?.value); form.reset()">{{'send' | translate}}</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+        <div class="col-lg-6 mt-5 mt-lg-0">
+          <div class="footer-info {{lang=='ar'?'footerAR':'footerEN'}}">
+            <div class="txt">
+              <p>{{'country' | translate}}</p>
+              <a href="tel:0555443737" target="_top">
+                <i class="fa fa-phone"></i>
+                <span>+966 0555443737</span>
+              </a>
+              <a href="mailto:info@elite-dia.com">
+                <i class="fa fa-globe"></i>
+                <span>www.elite-dia.com</span>
+              </a>
+              <a href="mailto:info@elite-dia.com">
+                <i class="fa fa-envelope"></i>
+                <span>info@elite-dia.com</span>
+              </a>
+            </div>
+
+
+            <div class="social mt-5">
+              <a href="https://www.linkedin.com/in/elite-diamond-8658992a3?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BzNPbKa32T2GG5odFSHzrow%3D%3D"
+                target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a href="https://x.com/EliteDiamond0?t=xhtUbS8Gp13xav3kylIG_w&s=08" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                  viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                  <path
+                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                </svg>
+              </a>
+              <a href="https://instagram.com/elite.diamond0?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+                <i class="fa fa-instagram"></i>
+              </a>
+
             </div>
           </div>
         </div>
-        <hr>
-        <div class="row">
-          <p>{{'message' | translate}}</p>
-          <div class="col-12">
-            <textarea name="message" ngModel required class="form-control" placeholder="{{'message'|translate}}"
-              autocomplete="off"></textarea>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary" [disabled]="form.invalid"
-              (click)="formSubmit(form?.value); form.reset()">{{'send' | translate}}</button>
-          </div>
-        </div>
+      </div>
 
-      </form>
     </div>
   </div>
   <!-- end contact -->
