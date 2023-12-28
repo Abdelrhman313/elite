@@ -80,5 +80,7 @@
   "servicesH7": "Follow-up With All Contractors to Finalize Projects",
   "servicesP7": "Receiving projects and their facilities from all contractors, completing accounts, reviewing final plans, and taking guarantees on contracting work and operating catalogs to close the project.",
   "servicesH8": "Financial Feasibility Study",
-  "servicesP8": "Our team works on preparing the architectural idea that suits the investor or partner and providing an integrated financial feasibility study for the project."
+  "servicesP8": "Our team works on preparing the architectural idea that suits the investor or partner and providing an integrated financial feasibility study for the project.",
+  "succMsg": "Message sent successfully",
+  "errMsg": "An error occurred while sending the message. Please try again"
 }

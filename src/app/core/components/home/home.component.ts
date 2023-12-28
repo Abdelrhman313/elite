@@ -9,6 +9,7 @@ import {
   Image,
 } from '@ks89/angular-modal-gallery';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-home',
@@ -548,6 +549,19 @@ export class HomeComponent implements OnInit {
   ngOnDestroy() { }
 
   formSubmit(data: any) {
-    console.log(data);
+    let Data = {
+      name: data.name,
+      email: data.email,
+      phone: data.code + ' ' + data.phone,
+      message: data.message
+    }
+    this.http.post('https://elite-send-mail.hamedsama1122021.workers.dev', Data).subscribe({
+      next: (res) => {
+        Swal.fire({ title: this.translateService.instant('succMsg'), icon: 'success' })
+      },
+      error: (err) => {
+        Swal.fire({ title: this.translateService.instant('errMsg'), icon: 'error' })
+      }
+    })
   }
 }
