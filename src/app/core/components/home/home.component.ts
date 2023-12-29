@@ -294,7 +294,7 @@ export class HomeComponent implements OnInit {
   selectedCode: any = null;
 
   codes: any = [
-    '+20',
+    '02+',
     ' 966+  ',
     ' 1+    ',
     ' 971+  ',
